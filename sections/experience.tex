@@ -2,18 +2,24 @@
 \usepackage{TLCresume}
 \begin{document}
 
+\definecolor{sectiondivide}{RGB}{170, 170, 170}
+
 %====================
 % EXPERIENCE A
 %====================
 \subsection{{Supercomputer Hardware Engineering Intern \hfill 07/2021 --- 01/2022}}
 \subtext{Tesla \hfill California}
 \begin{zitemize}
-\item Suppressed 100,000 Amp transient by designing dual hot-swap and constant current to constant voltage buck converter
-\item Proposed, designed and tested daughter card architecture for complexity offloading and improve fault tolerance
-\item Managed mechanical, harness, and system integration for the program
-\item Designed FPGA RTL to pull data from I2C bus and memory map data to PCIe link with Verilog
-\item Delivered hardware designs while brought up, validated and revised documentation under intense Tesla engineering deadlines
+\item Lead design and integration of daughter card architecture for complexity offloading and improve fault tolerance
+\item Developed safety systems and hot-swap circuitry for extremely-high power density applications of 200kW+
+%\item Suppressed 100,000 Amp transient by designing dual hot-swap and constant current to constant voltage buck converter
+%\item Managed mechanical, harness, and system integration for custom control architecture, analyzing tradeoffs off different implementations
+\item Took ownership of multiple boards, bringing up, validating and integrating manaing mechnical and system integration
+%\item Designed FPGA RTL to pull data from I2C bus and memory map data to PCIe link with Verilog
+\item Designed and implemented FPGA RTL for I2C peripheral to pull telemetry data from VRMs
+%\item Delivered hardware designs while brought up, validated and revised documentation under intense Tesla engineering deadlines
 \end{zitemize}
+{\color{sectiondivide} \vspace{-0.75em}\hrulefill}
 
 %====================
 % EXPERIENCE B
@@ -26,6 +32,7 @@
 \item Performed time-domain reflectometry on SGMII and 1000Base-T1 signal paths to verify signal integrity and performed eye-diagram analysis for intersymbol distortion
 \item Validated multi-phase buck converter load transient step response and open-loop phase response; meeting requirements
 \end{zitemize}
+{\color{sectiondivide} \vspace{-0.75em}\hrulefill}
 
 %====================
 % EXPERIENCE C
@@ -38,6 +45,7 @@
 \item Design and packaged manufacturable products for consumer use
 \item Designed 200MSP/s ADC with FPGA dev-board in Altium including touch screen protocol detection and spoofing for touch screen stylus testing
 \end{zitemize}
+{\color{sectiondivide} \vspace{-0.75em}\hrulefill}
 
 %====================
 % EXPERIENCE D
