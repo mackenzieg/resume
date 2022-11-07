@@ -14,21 +14,21 @@ software: MackenzieGoodwinSoftware.pdf
 .PHONY: silicon
 software: MackenzieGoodwinSilicon.pdf
 
-MackenzieGoodwinHardware.pdf: resume.tex
-	-latexmk -pdf -jobname='MackenzieGoodwinHardware' '$<'
+MackenzieGoodwinHardware.pdf: hardware.tex
+	-latexmk -pdf -silent -jobname='MackenzieGoodwinHardware' '$<'
 
 MackenzieGoodwinSoftware.pdf: resume.tex
-	-latexmk -pdf -jobname='MackenzieGoodwinSoftware' '$<'
+	-latexmk -pdf -silent -jobname='MackenzieGoodwinSoftware' '$<'
 
 MackenzieGoodwinSilicon.pdf: resume.tex
-	-latexmk -pdf -jobname='MackenzieGoodwinSilicon' '$<'
+	-latexmk -pdf -silent -jobname='MackenzieGoodwinSilicon' '$<'
 
 .PHONY: mostlyclean
 mostlyclean:
 	rm -f *.log
 
 .PHONY: clean
-clean: mostlyclean distclean
+clean: mostlyclean
 	rm -f *.aux *.out *.toc *.fdb_latexmk *.fls
 
 .PHONY: distclean
