@@ -1,7 +1,5 @@
 # Makefile
 
-.DELETE_ON_ERROR:
-
 .PHONY: all
 all: hardware software silicon
 
@@ -17,10 +15,10 @@ software: MackenzieGoodwinSilicon.pdf
 MackenzieGoodwinHardware.pdf: hardware.tex
 	-latexmk -pdf -silent -jobname='MackenzieGoodwinHardware' '$<'
 
-MackenzieGoodwinSoftware.pdf: resume.tex
+MackenzieGoodwinSoftware.pdf: software.tex
 	-latexmk -pdf -silent -jobname='MackenzieGoodwinSoftware' '$<'
 
-MackenzieGoodwinSilicon.pdf: resume.tex
+MackenzieGoodwinSilicon.pdf: silicon.tex
 	-latexmk -pdf -silent -jobname='MackenzieGoodwinSilicon' '$<'
 
 .PHONY: mostlyclean
