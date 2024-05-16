@@ -3,7 +3,13 @@
 \begin{document}
 \begin{tabular}{p{11em} p{1em} p{43em}}
 \skills{Languages} & &    Python, C, C++, Verilog, TCL, Java, Javascript, Solidity \\
-\skills{Tools} & &  Altium, Vivado, Cadence, Ansys HFSS, ModelSim \\
+
+\ifdefined\hardware
+    \skills{Tools} & &  Altium, Vivado, Cadence, Ansys HFSS, ModelSim \\
+\fi
+\ifdefine\silicon
+    \skills{Tools} & &  Vivado, Cadence, Altium, Modelsim \\
+\fi
 
 \ifdefined\hardware
     \skills{Specialties} & &  Highspeed Design, Full Stack, Analog \& Digital Design, RF Design, RTL Design \\

@@ -27,8 +27,4 @@ mostlyclean:
 
 .PHONY: clean
 clean: mostlyclean
-	rm -f *.aux *.out *.toc *.fdb_latexmk *.fls
-
-.PHONY: distclean
-distclean: clean
-	rm -f *.pdf
+	rm -f *.aux *.out *.toc *.fdb_latexmk *.fls *.pdf
