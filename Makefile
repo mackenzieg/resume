@@ -1,30 +1,21 @@
-# Makefile
+.PHONY: all hardware software silicon template mostlyclean clean
 
-.PHONY: all
 all: hardware software silicon
 
-.PHONY: hardware
-hardware: MackenzieGoodwinHardware.pdf
+hardware:
+	-latexmk -pdf -silent -jobname='MackenzieGoodwinHardware' 'hardware.tex'
 
-.PHONY: software
-software: MackenzieGoodwinSoftware.pdf
+software:
+	-latexmk -pdf -silent -jobname='MackenzieGoodwinSoftware' 'software.tex'
 
-.PHONY: silicon
-software: MackenzieGoodwinSilicon.pdf
+silicon:
+	-latexmk -pdf -silent -jobname='MackenzieGoodwinSilicon' 'silicon.tex'
 
-MackenzieGoodwinHardware.pdf: hardware.tex
-	-latexmk -pdf -silent -jobname='MackenzieGoodwinHardware' '$<'
+template:
+	latexmk -pdf -silent -jobname='MackenzieGoodwinTemplate' 'template.tex'
 
-MackenzieGoodwinSoftware.pdf: software.tex
-	-latexmk -pdf -silent -jobname='MackenzieGoodwinSoftware' '$<'
-
-MackenzieGoodwinSilicon.pdf: silicon.tex
-	-latexmk -pdf -silent -jobname='MackenzieGoodwinSilicon' '$<'
-
-.PHONY: mostlyclean
 mostlyclean:
 	rm -f *.log
 
-.PHONY: clean
 clean: mostlyclean
 	rm -f *.aux *.out *.toc *.fdb_latexmk *.fls *.pdf
