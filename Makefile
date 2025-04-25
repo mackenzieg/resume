@@ -1,18 +1,9 @@
 .PHONY: all hardware software silicon template mostlyclean clean
 
-all: hardware software silicon
+all: hardware
 
 hardware:
-	-latexmk -pdf -silent -jobname='MackenzieGoodwinHardware' 'hardware.tex'
-
-software:
-	-latexmk -pdf -silent -jobname='MackenzieGoodwinSoftware' 'software.tex'
-
-silicon:
-	-latexmk -pdf -silent -jobname='MackenzieGoodwinSilicon' 'silicon.tex'
-
-template:
-	latexmk -pdf -silent -jobname='MackenzieGoodwinTemplate' 'template.tex'
+	pdflatex hardware.tex
 
 mostlyclean:
 	rm -f *.log
