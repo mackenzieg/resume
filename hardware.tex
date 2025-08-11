@@ -149,23 +149,6 @@
 \end{center}
 
 
-
-%----------- EDUCATION -----------
-
-\section{Education}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-    
-    \resumeEducationHeading
-      {University of Waterloo
-      % \normalfont{(Admission rate: 0.09\%)}
-      }{Waterloo, Ontario, Canada}
-      {Bachelor of Science in Electrical Engineering; \textbf{GPA: 3.58/4.00}}{Sep 2016 \textbf{--} June 2022}
-      {}{} 
-
-  \resumeSubHeadingListEnd
-
-
 %----------- SKILLS -----------
 
 \section{Skills}
@@ -173,11 +156,11 @@
   \resumeSubHeadingListStart
     \small{\item{
         
-        \textbf{Languages:}{ Python, C, C++, Verilog, Verilog, Java, Javascript, Solidity } \\ \vspace{3pt}
+        \textbf{Languages:}{ Python, C, C++, System Verilog, Verilog, Java, Javascript, Solidity } \\ \vspace{3pt}
         
-        \textbf{Tools:}{ Cadence, Cocotb, Altium, Vivado, Cadence, Ansys HFSS, ModelSim} \\ \vspace{3pt}
+        \textbf{Tools:}{ Verilator, Cocotb, Altium, Vivado, Cadence, Ansys HFSS, ModelSim} \\ \vspace{3pt}
         
-        \textbf{Experience:}{ Network Protocols, RTL Design, Highspeed Design, Full Stack, Analog \& Digital Design} \\ \vspace{3pt}
+        \textbf{Experience:}{ Network Protocols, RTL Design, Highspeed Design, Full Stack, Analog \& Digital Design, PCB Design, Web Design} \\ \vspace{3pt}
         
     }}
   \resumeSubHeadingListEnd
@@ -192,18 +175,22 @@
 
   \resumeSubheading
     {Tesla Inc.}{Palo Alto, CA}
-    {Senior Silicon Design Engineer}{Feb 2024 \textbf{--} Present}
+    {DOJO Senior Silicon Design Engineer}{Feb 2024 \textbf{--} Present}
     \resumeItemListStart
-      \resumeItem{Innovated and developed the proprietary \href{https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf}{Tesla Transport Protocol (TTP)} over Layer 3—a congestion-aware protocol enabling low-latency, high-throughput communication across DOJO fabric}
+      \resumeItem{Innovated and developed the proprietary \href{https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf}{Tesla Transport Protocol (TTP)} over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO fabric}
       \resumeItem{Presented contributions to TTP at Hot Chips 2024; received patent recognition for protocol and silicon integration}
+      \resumeItem{Brought design of TTP to tape out ready in next generation DOJO Z2}
+      \resumeItem{Designing TTP on DOJO D3 silicon}
       \resumeItem{Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication}
       \resumeItem{Collaborated across silicon, networking, and systems to optimize fabric-level throughput and scalability}
+      \resumeItem{Designed and implemented a custom NIC with PCIe, DDR, and 100G QSFP for TTP communication}
     \resumeItemListEnd
 
   \resumeSubheading
     {Tesla Inc.}{Palo Alto, CA}
     {DOJO Hardware Engineering}{Jul 2022 \textbf{--} Feb 2024}
     \resumeItemListStart
+      \resumeItem{Worked on PCB hardware and silicon design for TTP fabric}
       \resumeItem{Designed and integrated a custom NIC with PCIe, DDR, and 100G QSFP for TTP communication}
       \resumeItem{Optimized production line throughput via automation and end-of-line testers}
       \resumeItem{Authored RTL, C++ drivers, and Node.js backend for hardware tracking and system diagnostics}
@@ -215,9 +202,11 @@
     {Tesla Inc.}{Palo Alto, CA}
     {DOJO Hardware Intern}{Aug 2021 \textbf{--} Dec 2021}
     \resumeItemListStart
-      \resumeItem{Tested 100G QSFP and SERDES-based interface cards for DOJO mesh fabric and high-density power systems}
-      \resumeItem{Designed supercapacitor hot-swap controller enabling safe live insertion}
-      \resumeItem{Brought up Tesla's first DOJO compute cabinet and verified cabinet-wide integration}
+      \resumeItem{Tested high-speed interface cards for mesh network and fabric communication containing 100G QSFP and high speed SERDES interfaces achieving TB/s throughput, alongside high-density power supply units}
+      \resumeItem{Engineered a super capacitor hot swap controller, enabling seamless hardware insertion into a live cabinet, thus promoting operational convenience and safety}
+      \resumeItem{Engineered next generation DOJO cabinet controller with wide array of IOs and infastructure controllers}
+      \resumeItem{Brought up Tesla's first generated DOJO cabinet with compute nodes and power supply units}
+      \resumeItem{Effectively tested and integrated a large, complex system comprising intricate harnessing, control systems, and high-power delivery, ensuring overall system coherence and performance}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -238,6 +227,8 @@
       \resumeItem{Created DSP pipeline using wavelets/autocorrelation to detect breathing rates at 10m range}
       \resumeItem{Built Python/C++ client-server system for real-time offloaded processing}
     \resumeItemListEnd
+
+  \pagebreak
 
   \resumeSubheading
     {Kazoo Technology}{Hong Kong, HK}
@@ -311,17 +302,35 @@
 
 \section{Projects}
 \vspace{3pt}
+\small{All projects available at \href{https://mackenzieg.tech/projects}{mackenzieg.tech/projects}}
+\vspace{3pt}
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\textbf{mmWave Radar Vital Sign Detection} $|$ \emph{Full-Time Research (2020 -- 2021)}}{}
+    {\textbf{Microplastic Detector} $|$ \emph{Research Project (2021 -- 2022)}}{}
       \resumeItemListStart
-        \resumeItem{Developed a 60GHz mmWave radar system to detect breathing rates remotely, aiding nurses with highly infectious patients.}
-        \resumeItem{Designed a signal processing algorithm in MATLAB using wavelet transforms and auto-correlation to accurately detect breathing rates at distances up to 10 meters.}
-        \resumeItem{Implemented a real-time client-server architecture in Python and C++ to offload computation and streamline system responsiveness.}
+        \resumeItem{Designed and built a microwave cavity resonator system to detect microplastic concentrations in water samples}
+        \resumeItem{Developed signal processing algorithms to analyze resonant frequency shifts and S11 magnitude changes}
+        \resumeItem{Achieved reliable detection of microplastic concentrations from 300-900 ppm with clear correlation in resonant magnitude}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {University of Waterloo
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Waterloo, Ontario, Canada}
+      {Bachelor of Science in Electrical Engineering; GPA: 3.58/4.00}{Sep 2016 \textbf{--} June 2022}
+      {}{}
+
+  \resumeSubHeadingListEnd
 
 
 

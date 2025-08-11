@@ -4,6 +4,7 @@ all: hardware
 
 hardware:
 	pdflatex hardware.tex
+	cp hardware.pdf "Mackenzie Goodwin.pdf"
 
 mostlyclean:
 	rm -f *.log
