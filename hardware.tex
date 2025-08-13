@@ -177,25 +177,20 @@
     {Tesla Inc.}{Palo Alto, CA}
     {DOJO Senior Silicon Design Engineer}{Feb 2024 \textbf{--} Present}
     \resumeItemListStart
-      \resumeItem{Innovated and developed the proprietary \href{https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf}{Tesla Transport Protocol (TTP)} over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO fabric}
-      \resumeItem{Presented contributions to TTP at Hot Chips 2024; received patent recognition for protocol and silicon integration}
-      \resumeItem{Brought design of TTP to tape out ready in next generation DOJO Z2}
-      \resumeItem{Designing TTP on DOJO D3 silicon}
-      \resumeItem{Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication}
-      \resumeItem{Collaborated across silicon, networking, and systems to optimize fabric-level throughput and scalability}
-      \resumeItem{Designed and implemented a custom NIC with PCIe, DDR, and 100G QSFP for TTP communication}
+      \resumeItem{Worked and developed the proprietary \href{https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf}{Tesla Transport Protocol (TTP)} over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL}
+      \resumeItem{Brought design of TTP from design phase to tape out ready in next generation DOJO Z2 in system verilog}
+      \resumeItem{Designing TTP RDMA system on next generation DOJO silicon taking into consideration scaling and adopting Ultra Ethernet Consortium (UEC) standards}
+      \resumeItem{Scaled data center for video clip tensorization ingest and for all reduce operations}
     \resumeItemListEnd
 
   \resumeSubheading
     {Tesla Inc.}{Palo Alto, CA}
     {DOJO Hardware Engineering}{Jul 2022 \textbf{--} Feb 2024}
     \resumeItemListStart
-      \resumeItem{Worked on PCB hardware and silicon design for TTP fabric}
-      \resumeItem{Designed and integrated a custom NIC with PCIe, DDR, and 100G QSFP for TTP communication}
-      \resumeItem{Optimized production line throughput via automation and end-of-line testers}
-      \resumeItem{Authored RTL, C++ drivers, and Node.js backend for hardware tracking and system diagnostics}
-      \resumeItem{Wrote RTL for I2C-to-AXI translation enabling microcontroller access to internal buses}
-      \resumeItem{Built automated silicon provisioning/test framework and debugged 50Gb/s SERDES \& 100G QSFP interfaces}
+      \resumeItem{Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication using PCB design and FPGA design}
+      \resumeItem{Brought up DOJO interface cart NIC and FZ1 (compute-die interfaces) in production, developing front- and back-end Node.js tools for hardware tracking and diagnostics, and performing signal integrity and hardware debugging}
+      \resumeItem{Wrote RTL to help with usability enabling microcontroller access to internal buses as well as enabling hostless hardware control}
+      \resumeItem{Designed hardware and brought up production line for high power AC to DC conversion for DOJO cabinet power rails}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -214,21 +209,32 @@
     {Autopilot Hardware Intern}{Jan 2021 \textbf{--} May 2021}
     \resumeItemListStart
       \resumeItem{Built Python test suites for switch, GPS, and VRM bring-up to streamline validation workflows}
-      \resumeItem{Debugged Autopilot board failures in thermally stressed environments}
-      \resumeItem{Performed TDR and eye diagram analysis for SGMII and 1000Base-T1 interfaces}
+      \resumeItem{Debugged Autopilot board failures in thermally stressed environments finding hardware design issues on the board}
+      \resumeItem{Performed TDR and eye diagram analysis on SGMII and 1000Base-T1 interfaces to diagnose and resolve signal integrity issues}
       \resumeItem{Validated buck converter transient/load stability}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Evertz Microsystems}{Burlington, ON, Canada}
+    {Systems Engineering Intern}{Sep 2017 \textbf{--} Aug 2018}
+    \resumeItemListStart
+      \resumeItem{Designed DDR3 buffer system in RTL with CPU to DMA for Wireshark-compatible frame dumping and debug}
+      \resumeItem{Researched impedance/phase matching for 25G QSFP lanes to improve signal integrity}
+      \resumeItem{Captured RGMII, SGMII, and 1000BTX schematics with optimized magnetics and termination}
+      \resumeItem{Created FPGA RTL for timestamped 10Gb/s packet capture and replay}
+      \resumeItem{Debugged PCB short circuits and engineered active fuse systems}
     \resumeItemListEnd
 
   \resumeSubheading
     {University of Waterloo}{Waterloo, ON, Canada}
     {Undergraduate Research Assistant}{Apr 2020 \textbf{--} Aug 2020}
     \resumeItemListStart
-      \resumeItem{Developed 60GHz mmWave radar for non-contact hospital patient monitoring}
+      \resumeItem{Developed 60GHz mmWave radar measurment device for non-contact hospital patient monitoring}
       \resumeItem{Created DSP pipeline using wavelets/autocorrelation to detect breathing rates at 10m range}
       \resumeItem{Built Python/C++ client-server system for real-time offloaded processing}
     \resumeItemListEnd
 
-  \pagebreak
+%  \pagebreak
 
   \resumeSubheading
     {Kazoo Technology}{Hong Kong, HK}
@@ -236,6 +242,7 @@
     \resumeItemListStart
       \resumeItem{Reversed engineered stylus touch hardware and validated via simulation and prototype}
       \resumeItem{Designed analog amplifiers and touch spoofing systems with 200MSPS ADC on FPGA}
+      \resumeItem{Very relavent but was their main actor in their commercial}
     \resumeItemListEnd
 
   \resumeSubheading
@@ -248,26 +255,8 @@
     \resumeItemListEnd
 
   \resumeSubheading
-    {Evertz Microsystems}{Burlington, ON, Canada}
-    {Systems Engineering Intern}{May 2018 \textbf{--} Aug 2018}
-    \resumeItemListStart
-      \resumeItem{Researched impedance/phase matching for 25G QSFP lanes to improve signal integrity}
-      \resumeItem{Captured RGMII, SGMII, and 1000BTX schematics with optimized magnetics and termination}
-      \resumeItem{Developed firmware for detecting encrypted video signals}
-    \resumeItemListEnd
-
-  \resumeSubheading
-    {Evertz Microsystems}{Burlington, ON, Canada}
-    {Systems Engineering Intern}{Sep 2017 \textbf{--} Dec 2017}
-    \resumeItemListStart
-      \resumeItem{Created FPGA firmware for timestamped 10Gb/s packet capture and replay}
-      \resumeItem{Designed DDR3 buffer system with DMA for Wireshark-compatible frame dumping}
-      \resumeItem{Debugged PCB short circuits and engineered active fuse systems}
-    \resumeItemListEnd
-
-  \resumeSubheading
     {Dozr}{Kitchener, ON, Canada}
-    {Fullstack Software Engineer}{Jan 2017 \textbf{--} Apr 2017}
+    {Fullstack Software Engineer Intern}{Jan 2017 \textbf{--} Apr 2017}
     \resumeItemListStart
       \resumeItem{Developed frontend React components and internal tooling using advanced state management}
       \resumeItem{Built distributed Node.js/Python crawler with intelligent throttling and parallelism}
@@ -326,8 +315,9 @@
     \resumeEducationHeading
       {University of Waterloo
       % \normalfont{(Admission rate: 0.09\%)}
+      % GPA: 3.58/4.00
       }{Waterloo, Ontario, Canada}
-      {Bachelor of Science in Electrical Engineering; GPA: 3.58/4.00}{Sep 2016 \textbf{--} June 2022}
+      {Bachelor of Science in Electrical Engineering}{Sep 2016 \textbf{--} June 2022}
       {}{}
 
   \resumeSubHeadingListEnd
