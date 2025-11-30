@@ -4,7 +4,7 @@ all: hardware
 
 hardware:
 	pdflatex hardware.tex
-	cp hardware.pdf "Mackenzie Goodwin.pdf"
+	cp hardware.pdf "MackenzieGoodwinResume.pdf"
 
 mostlyclean:
 	rm -f *.log
