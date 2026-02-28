@@ -143,7 +143,7 @@
     $|$
     \faGithub \hspace{.5pt} \href{https://github.com/mackenzieg}{GitHub}
     $|$
-    \faGlobe \hspace{.5pt} \href{https://mackenzieg.tech/}{My Website}
+    \faGlobe \hspace{.5pt} \href{https://mackenzieg.com/}{My Website}
     $|$
     \faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/kqi1WgTkcwmUqqwm8}{Palo Alto, CA}
 \end{center}
@@ -177,30 +177,45 @@
     {Tesla Inc.}{Palo Alto, CA}
     {DOJO Senior Silicon Design Engineer}{Feb 2024 \textbf{--} Present}
     \resumeItemListStart
-      \resumeItem{Worked and developed the proprietary \href{https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf}{Tesla Transport Protocol (TTP)} over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL}
+      \resumeItem{Architected and taped out the proprietary \href{https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf}{Tesla Transport Protocol (TTP)}, a Layer 3 congestion-aware die-to-die fabric protocol delivering low-latency, high-throughput interconnects across the DOJO AI training cluster in SystemVerilog RTL}
+      \ifdefined\compactmode\else
       \resumeItem{Brought design of TTP from design phase to tape out ready in next generation DOJO Z2 in system verilog}
       \resumeItem{Designing TTP RDMA system on next generation DOJO silicon taking into consideration scaling and adopting Ultra Ethernet Consortium (UEC) standards}
       \resumeItem{Scaled data center for video clip tensorization ingest and for all reduce operations}
+      \fi
     \resumeItemListEnd
 
   \resumeSubheading
     {Tesla Inc.}{Palo Alto, CA}
     {DOJO Hardware Engineering}{Jul 2022 \textbf{--} Feb 2024}
     \resumeItemListStart
-      \resumeItem{Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication using PCB design and FPGA design}
-      \resumeItem{Brought up DOJO interface cart NIC and FZ1 (compute-die interfaces) in production, developing front- and back-end Node.js tools for hardware tracking and diagnostics, and performing signal integrity and hardware debugging}
+      \resumeItem{Led PCB and FPGA design of a custom high-density compute cluster with integrated TTP-enabled NICs for DOJO's die-to-die fabric interconnect}
+      \resumeItem{Drove production bring-up of DOJO interface cart NIC and FZ1 compute-die interfaces, owning signal integrity debugging and full-stack Node.js hardware diagnostics tooling}
+      \ifdefined\compactmode\else
       \resumeItem{Wrote RTL to help with usability enabling microcontroller access to internal buses as well as enabling hostless hardware control}
       \resumeItem{Designed hardware and brought up production line for high power AC to DC conversion for DOJO cabinet power rails}
+      \fi
     \resumeItemListEnd
+
+  \ifdefined\compactmode
+  \resumeSubheading
+    {Tesla Inc.}{Palo Alto, CA}
+    {Hardware Engineering Intern (DOJO \& Autopilot)}{Jan 2021 \textbf{--} Dec 2021}
+    \resumeItemListStart
+      \resumeItem{Designed PCB schematics and layouts for Autopilot subsystems and brought up multiple board systems including switch, GPS, and VRM across both DOJO and Autopilot platforms}
+      \resumeItem{Delivered Tesla's first DOJO cabinet bring-up, integrating compute nodes, high-power PSUs, FPGA-based controllers, and control systems into a production AI training cluster}
+      \resumeItem{Developed Python automation tooling for hardware validation and wrote FPGA RTL for cabinet controller I/O and infrastructure management}
+    \resumeItemListEnd
+  \else
 
   \resumeSubheading
     {Tesla Inc.}{Palo Alto, CA}
     {DOJO Hardware Intern}{Aug 2021 \textbf{--} Dec 2021}
     \resumeItemListStart
+      \resumeItem{Delivered Tesla's first DOJO cabinet bring-up, integrating compute nodes, high-power PSUs, and control systems into a production AI training cluster}
       \resumeItem{Tested high-speed interface cards for mesh network and fabric communication containing 100G QSFP and high speed SERDES interfaces achieving TB/s throughput, alongside high-density power supply units}
       \resumeItem{Engineered a super capacitor hot swap controller, enabling seamless hardware insertion into a live cabinet, thus promoting operational convenience and safety}
       \resumeItem{Engineered next generation DOJO cabinet controller with wide array of IOs and infastructure controllers}
-      \resumeItem{Brought up Tesla's first generated DOJO cabinet with compute nodes and power supply units}
       \resumeItem{Effectively tested and integrated a large, complex system comprising intricate harnessing, control systems, and high-power delivery, ensuring overall system coherence and performance}
     \resumeItemListEnd
 
@@ -208,49 +223,49 @@
     {Tesla Inc.}{Palo Alto, CA}
     {Autopilot Hardware Intern}{Jan 2021 \textbf{--} May 2021}
     \resumeItemListStart
-      \resumeItem{Built Python test suites for switch, GPS, and VRM bring-up to streamline validation workflows}
-      \resumeItem{Debugged Autopilot board failures in thermally stressed environments finding hardware design issues on the board}
+      \resumeItem{Designed PCB schematics and layouts for Autopilot hardware subsystems and led bring-up of multiple board systems including switch, GPS, and VRM}
+      \resumeItem{Developed Python automation tooling to streamline hardware bring-up and validation workflows across multiple board platforms}
+      \resumeItem{Identified root-cause hardware design failures under thermal stress conditions through systematic board-level debugging}
       \resumeItem{Performed TDR and eye diagram analysis on SGMII and 1000Base-T1 interfaces to diagnose and resolve signal integrity issues}
       \resumeItem{Validated buck converter transient/load stability}
     \resumeItemListEnd
+
+  \fi
+
+  \ifdefined\compactmode
+  \resumeSubheading
+    {Evertz Microsystems $\cdot$ AR Modular RF $\cdot$ Kazoo Technology $\cdot$ Dozr}{Various}
+    {FPGA Design, RF Hardware, Analog \& Full-Stack Engineering}{Jan 2017 \textbf{--} Apr 2020}
+    \resumeItemListStart
+      \resumeItem{Designed FPGA RTL pipelines for 10Gb/s packet capture and DDR3 DMA buffer systems; engineered analog front-end amplifiers and FPGA-based emulation systems for consumer touch hardware}
+      \resumeItem{Built LabVIEW/Python automated RF test infrastructure and firmware flashing automation for IP-enabled RF amplifier products}
+      \resumeItem{Shipped React frontend components and architected a distributed Node.js/Python web crawler with intelligent throttling and parallelism}
+    \resumeItemListEnd
+  \else
 
   \resumeSubheading
     {Evertz Microsystems}{Burlington, ON, Canada}
     {Systems Engineering Intern}{Sep 2017 \textbf{--} Aug 2018}
     \resumeItemListStart
-      \resumeItem{Designed DDR3 buffer system in RTL with CPU to DMA for Wireshark-compatible frame dumping and debug}
+      \resumeItem{Designed DDR3 CPU-to-DMA buffer in RTL for Wireshark-compatible frame capture and developed FPGA RTL pipeline for timestamped 10Gb/s packet capture and replay}
       \resumeItem{Researched impedance/phase matching for 25G QSFP lanes to improve signal integrity}
       \resumeItem{Captured RGMII, SGMII, and 1000BTX schematics with optimized magnetics and termination}
-      \resumeItem{Created FPGA RTL for timestamped 10Gb/s packet capture and replay}
       \resumeItem{Debugged PCB short circuits and engineered active fuse systems}
     \resumeItemListEnd
-
-  \resumeSubheading
-    {University of Waterloo}{Waterloo, ON, Canada}
-    {Undergraduate Research Assistant}{Apr 2020 \textbf{--} Aug 2020}
-    \resumeItemListStart
-      \resumeItem{Developed 60GHz mmWave radar measurment device for non-contact hospital patient monitoring}
-      \resumeItem{Created DSP pipeline using wavelets/autocorrelation to detect breathing rates at 10m range}
-      \resumeItem{Built Python/C++ client-server system for real-time offloaded processing}
-    \resumeItemListEnd
-
-%  \pagebreak
 
   \resumeSubheading
     {Kazoo Technology}{Hong Kong, HK}
     {Electronics Designer Intern}{Aug 2019 \textbf{--} Apr 2020}
     \resumeItemListStart
-      \resumeItem{Reversed engineered stylus touch hardware and validated via simulation and prototype}
-      \resumeItem{Designed analog amplifiers and touch spoofing systems with 200MSPS ADC on FPGA}
-      \resumeItem{Very relavent but was their main actor in their commercial}
+      \resumeItem{Reverse engineered proprietary stylus touch hardware and designed analog front-end amplifiers and FPGA-based touch emulation systems with a 200MSPS ADC}
+      \resumeItem{Validated designs via simulation and prototype}
     \resumeItemListEnd
 
   \resumeSubheading
     {AR Modular RF}{Seattle, WA}
     {RF Hardware Engineering Intern}{Jan 2019 \textbf{--} Apr 2019}
     \resumeItemListStart
-      \resumeItem{Built LabView + Python-based automated RF test infrastructure, improving test speed and repeatability}
-      \resumeItem{Automated MAC management and firmware flashing system for IP-enabled RF products}
+      \resumeItem{Built LabVIEW/Python automated RF test infrastructure and developed MAC management and firmware flashing automation, significantly improving test throughput and repeatability for IP-enabled RF products}
       \resumeItem{Performed RF spec analysis and documented technical content for marketing}
     \resumeItemListEnd
 
@@ -258,8 +273,20 @@
     {Dozr}{Kitchener, ON, Canada}
     {Fullstack Software Engineer Intern}{Jan 2017 \textbf{--} Apr 2017}
     \resumeItemListStart
-      \resumeItem{Developed frontend React components and internal tooling using advanced state management}
-      \resumeItem{Built distributed Node.js/Python crawler with intelligent throttling and parallelism}
+      \resumeItem{Shipped React frontend components with advanced state management and architected a distributed Node.js/Python web crawler with intelligent throttling and parallelism}
+    \resumeItemListEnd
+
+  \fi
+
+  \resumeSubheading
+    {University of Waterloo}{Waterloo, ON, Canada}
+    {Undergraduate Research Assistant}{Apr 2020 \textbf{--} Aug 2020}
+    \resumeItemListStart
+      \resumeItem{Designed a 60GHz mmWave radar system for non-contact patient vitals monitoring, implementing a wavelet/autocorrelation DSP pipeline achieving reliable breathing rate detection at 10m range}
+      \ifdefined\compactmode\else
+      \resumeItem{Created DSP pipeline using wavelets/autocorrelation to detect breathing rates at 10m range}
+      \resumeItem{Built Python/C++ client-server system for real-time offloaded processing}
+      \fi
     \resumeItemListEnd
 
     
@@ -291,16 +318,17 @@
 
 \section{Projects}
 \vspace{3pt}
-\small{All projects available at \href{https://mackenzieg.tech/projects}{mackenzieg.tech/projects}}
+\small{All projects available at \href{https://mackenzieg.com/projects}{mackenzieg.com/projects}}
 \vspace{3pt}
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
     {\textbf{Microplastic Detector} $|$ \emph{Research Project (2021 -- 2022)}}{}
       \resumeItemListStart
-        \resumeItem{Designed and built a microwave cavity resonator system to detect microplastic concentrations in water samples}
+        \resumeItem{Designed and fabricated a microwave cavity resonator system achieving reliable detection of microplastic concentrations from 300--900 ppm via resonant frequency shift and S11 analysis}
+        \ifdefined\compactmode\else
         \resumeItem{Developed signal processing algorithms to analyze resonant frequency shifts and S11 magnitude changes}
-        \resumeItem{Achieved reliable detection of microplastic concentrations from 300-900 ppm with clear correlation in resonant magnitude}
+        \fi
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
